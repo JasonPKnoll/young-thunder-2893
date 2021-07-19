@@ -4,7 +4,7 @@
   <h3><%= studio.name %></h3>
   <p>Location: <%= studio.location %></p>
 
-  <% @movies.each do |movie| %>
+  <% @studios.movies.each do |movie| %>
   <p>Movie: <%= movie.name %></p>
-  
+  <% end %>
 <% end %>
