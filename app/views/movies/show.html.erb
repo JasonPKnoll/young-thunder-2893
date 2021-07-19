@@ -1,0 +1,9 @@
+<h1><%= @movie.title %></h1>
+<h2>Genre: <%= @movie.genre %></h2>
+<h2>Year Released: <%= @movie.creation_year %></h2>
+
+<h3>Actors</h3>
+<% @movie.actors.each do |actor| %>
+  <p>Actor: <%= actor.name %>
+  | Age: <%= actor.age %></p>
+<% end %>
