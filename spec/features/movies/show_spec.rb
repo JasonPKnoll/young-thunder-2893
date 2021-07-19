@@ -10,7 +10,6 @@ RSpec.describe 'the studio index' do
     @studio2 = Studio.create!(name: "Disney Pixar", location: "HollyWood")
     @movie2 = @studio.movies.create!(title: "Jaws", creation_year: 1975, genre: "Adventure")
     @actor4 = @movie2.actors.create!(name: "Roy Scheider", age: 43)
-
   end
 
   it "displays movie attrbutes" do
