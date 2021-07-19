@@ -12,7 +12,6 @@ RSpec.describe 'the studio index' do
 
   it 'displays studio and its movies' do
     visit "/studios"
-    save_and_open_page
 
     expect(page).to have_content("Universal Studios")
     expect(page).to have_content("The Mummy")
