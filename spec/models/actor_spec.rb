@@ -16,4 +16,8 @@ RSpec.describe Actor, type: :model do
   it "can show actors by order from age" do
     expect(Actor.sort_by_age).to eq([@actor2, @actor, @actor3])
   end
+
+  it "can take average of actors ages" do
+    expect(Actor.average_age).to eq(32.33)
+  end
 end
